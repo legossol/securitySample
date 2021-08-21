@@ -32,7 +32,7 @@ public class AuthController {
     }
 
     @PostMapping("/authenticate")
-    public ResponseEntity<TokenDto> authorize(@Valid @RequestBody LoginDto loginDto){
+    public ResponseEntity<TokenDto> authorize(@org.jetbrains.annotations.NotNull @Valid @RequestBody LoginDto loginDto){
         log.info("뭐가 문제야");
         UsernamePasswordAuthenticationToken authenticationToken =
             new UsernamePasswordAuthenticationToken(loginDto.getUsername(), loginDto.getPassword());
