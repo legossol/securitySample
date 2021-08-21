@@ -18,9 +18,6 @@ spring:
         format_sql: true
         show_sql: true
 
-logging:
-  level:
-    me.silvernine: DEBUG
 
 jwt:
   header: Authorization
